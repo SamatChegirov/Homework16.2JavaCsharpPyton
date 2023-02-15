@@ -7,6 +7,6 @@ public class Python extends Backand {
 
     @Override
     public String toString() {
-        return "Python ";
+        return super.toString() + django();
     }
 }

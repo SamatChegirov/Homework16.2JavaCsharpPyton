@@ -6,6 +6,6 @@ public class Java extends Backand {
 
     @Override
     public String toString() {
-        return "Java ";
+        return super.toString() + spring();
     }
 }
