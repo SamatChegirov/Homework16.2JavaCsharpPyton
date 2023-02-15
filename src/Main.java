@@ -6,21 +6,20 @@
 public class Main {
     public static void main(String[] args) {
 
+        Java java = new Java();
+        CSharp cSharp = new CSharp();
+        Python python = new Python();
 
-
-        Backand java = new Java();
-        Backand cSharp = new CSharp();
-        Backand python = new Python();
-
-        boolean jv = java instanceof CSharp;
-        System.out.println(jv);
+        boolean jv = java instanceof Java;
+        boolean cSh = cSharp instanceof CSharp;
+        boolean py = python instanceof Python;
+        System.out.println(jv + "\n" + cSh + "\n" + py);
 
         Backand[] back = {java, cSharp, python};
         for (Backand b : back) {
             System.out.println(b.getClass());
         }
-
-
+        System.out.println("\n" + java.spring() + "\n" + cSharp.dotNet() + "\n" + python.django());
 
     }
 }
